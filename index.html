@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLORBOX PRINT SHOP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Using Noto Sans Malayalam for Malayalam text and Inter for the rest */
+        body {
+            font-family: 'Inter', 'Noto Sans Malayalam', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, button, a {
+            font-family: 'Noto Sans Malayalam', 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-rose-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-rose-500">COLORBOX</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-rose-500 transition duration-300">HOME</a>
+                <a href="#products" class="text-gray-600 hover:text-rose-500 transition duration-300">PRODUCTS</a>
+                <a href="#about" class="text-gray-600 hover:text-rose-500 transition duration-300">ABOUTS</a>
+                <a href="#contact" class="text-gray-600 hover:text-rose-500 transition duration-300">CONTACTS</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-rose-50">HOME</a>
+            <a href="#products" class="block py-2 px-4 text-sm hover:bg-rose-50">PRODUCTS</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-rose-50">ABOUTS</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-rose-50">CONTACTS</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-cover bg-center text-white py-32 px-6" style="background-image: url('https://images.unsplash.com/photo-1576426863848-c21f68c6aa98?q=80&w=2070&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container mx-auto text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">ഓരോ നിമിഷവും അവിസ്മരണീയമാക്കാൻ</h1>
+                <p class="text-lg md:text-xl mb-8">നിങ്ങളുടെ പ്രിയപ്പെട്ടവർക്കായി ഏറ്റവും മികച്ച സമ്മാനങ്ങൾ കണ്ടെത്തൂ.</p>
+                <a href="#products" class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">ശേഖരം കാണുക</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">ഞങ്ങളുടെ പ്രത്യേക ഉൽപ്പന്നങ്ങൾ</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/fecdd3/44403c?text=കസ്റ്റം+മഗ്" alt="കസ്റ്റം മഗ്" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">കസ്റ്റം മഗ്</h3>
+                            <p class="text-gray-600 mb-4">₹499</p>
+                            <a href="https://wa.me/919747394723?text=%E0%B4%B9%E0%B4%BE%E0%B4%AF%E0%B5%8D%2C%20%E0%B4%8E%E0%B4%A8%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D%20%E0%B4%95%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B4%82%20%E0%B4%AE%E0%B4%97%E0%B5%8D%20%E0%B4%B5%E0%B4%BE%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%BE%E0%B5%BB%20%E0%B4%A4%E0%B4%BE%E0%B4%B2%E0%B5%8D%E0%B4%AA%E0%B4%B0%E0%B5%8D%E0%B4%AF%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%8D." target="_blank" class="w-full block text-center bg-rose-500 text-white py-2 rounded-lg hover:bg-rose-600 transition duration-300">വാങ്ങുക</a>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/fbcfe8/44403c?text=ഫോട്ടോ+ഫ്രെയിം" alt="ഫോട്ടോ ഫ്രെയിം" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">ഫോട്ടോ ഫ്രെയിം</h3>
+                            <p class="text-gray-600 mb-4">₹799</p>
+                            <a href="https://wa.me/919747394723?text=%E0%B4%B9%E0%B4%BE%E0%B4%AF%E0%B5%8D%2C%20%E0%B4%8E%E0%B4%A8%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D%20%E0%B4%AB%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%8B%20%E0%B4%AB%E0%B5%8D%E0%B4%B0%E0%B5%86%E0%B4%AF%E0%B4%BF%E0%B4%82%20%E0%B4%B5%E0%B4%BE%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%BE%E0%B5%BB%20%E0%B4%A4%E0%B4%BE%E0%B4%B2%E0%B5%8D%E0%B4%AA%E0%B4%B0%E0%B5%8D%E0%B4%AF%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%8D." target="_blank" class="w-full block text-center bg-rose-500 text-white py-2 rounded-lg hover:bg-rose-600 transition duration-300">വാങ്ങുക</a>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/f5d0fe/44403c?text=ചോക്ലേറ്റ്+ബോക്സ്" alt="ചോക്ലേറ്റ് ബോക്സ്" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">ചോക്ലേറ്റ് ബോക്സ്</h3>
+                            <p class="text-gray-600 mb-4">₹999</p>
+                            <a href="https://wa.me/919747394723?text=%E0%B4%B9%E0%B4%BE%E0%B4%AF%E0%B5%8D%2C%20%E0%B4%8E%E0%B4%A8%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D%20%E0%B4%9A%E0%B5%8B%E0%B4%95%E0%B5%8D%E0%B4%B2%E0%B5%87%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D%20%E0%B4%AC%E0%B5%8B%E0%B4%95%E0%B5%8D%E0%B4%B8%E0%B5%8D%20%E0%B4%B5%E0%B4%BE%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%BE%E0%B5%BB%20%E0%B4%A4%E0%B4%BE%E0%B4%B2%E0%B5%8D%E0%B4%AA%E0%B4%B0%E0%B5%8D%E0%B4%AF%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%8D." target="_blank" class="w-full block text-center bg-rose-500 text-white py-2 rounded-lg hover:bg-rose-600 transition duration-300">വാങ്ങുക</a>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/400x300/d8b4fe/44403c?text=ടെഡി+ബെയർ" alt="ടെഡി ബെയർ" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">ടെഡി ബെയർ</h3>
+                            <p class="text-gray-600 mb-4">₹1299</p>
+                            <a href="https://wa.me/919747394723?text=%E0%B4%B9%E0%B4%BE%E0%B4%AF%E0%B5%8D%2C%20%E0%B4%8E%E0%B4%A8%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D%20%E0%B4%9F%E0%B5%86%E0%B4%A1%E0%B4%BF%20%E0%B4%AC%E0%B5%86%E0%B4%AF%E0%B5%BC%20%E0%B4%B5%E0%B4%BE%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%BE%E0%B5%BB%20%E0%B4%A4%E0%B4%BE%E0%B4%B2%E0%B5%8D%E0%B4%AA%E0%B4%B0%E0%B5%8D%E0%B4%AF%E0%B4%AE%E0%B5%81%E0%B4%A3%E0%B5%8D%E0%B4%9F%E0%B5%8D." target="_blank" class="w-full block text-center bg-rose-500 text-white py-2 rounded-lg hover:bg-rose-600 transition duration-300">വാങ്ങുക</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">ഞങ്ങളെക്കുറിച്ച്</h2>
+                <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                    ഞങ്ങളുടെ ഗിഫ്റ്റ് ഷോപ്പിലേക്ക് സ്വാഗതം. എല്ലാ ആഘോഷങ്ങൾക്കും അവസരങ്ങൾക്കും അനുയോജ്യമായ, സ്നേഹം നിറഞ്ഞ സമ്മാനങ്ങൾ ഞങ്ങൾ നിങ്ങൾക്കായി ഒരുക്കിയിരിക്കുന്നു. നിങ്ങളുടെ സന്തോഷമാണ് ഞങ്ങളുടെ ഏറ്റവും വലിയ പ്രചോദനം. ഓരോ സമ്മാനവും ഓർമ്മയിൽ സൂക്ഷിക്കാവുന്ന ഒരനുഭവമാക്കി മാറ്റാൻ ഞങ്ങൾ ശ്രമിക്കുന്നു.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">ഞങ്ങളെ ബന്ധപ്പെടുക</h2>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg text-center">
+                   <p class="text-lg text-gray-700 mb-4"><strong>EMAIL:</strong> colorbox@gmail.com</p>
+                   <p class="text-lg text-gray-700 mb-4"><strong>MOB:</strong> 9747394729</p>
+                   <p class="text-lg text-gray-700"><strong>INSTAGRAM:</strong> colorbox karulai </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 COLORBOX GIFT SHOP</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+$0
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
